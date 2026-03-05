@@ -123,3 +123,73 @@ margin: 5px 0 0;
 font-size: 18px;
 font-style: italic;
 }
+
+.siguientes {
+    background-color: #86bbbd;
+    align-items: center;
+    padding: 1em;
+}
+
+.siguientes i{
+    margin: 10em;
+    text-decoration: none;
+}
+
+.siguientes a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #86bbbd;
+    color: #533747;
+    text-align: center;
+    padding: 1em;
+}
+
+nav{
+    background-color: #CE9BED;
+    padding: 10px;
+}
+
+/* lista principal */
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* coloca los elementos horizontalmente */
+    justify-content: center;
+}
+
+/* elementos del menú */
+nav ul li{
+    position: relative;
+    margin: 0 20px;
+}
+
+/* enlaces */
+nav ul li a{
+    text-decoration: none;
+    color: #533747;
+    font-weight: bold;
+}
+
+/* submenú oculto */
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: #F4E9FB;
+    top: 25px;
+    left: 0;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* mostrar submenú al pasar el mouse */
+nav ul li:hover ul{
+    display: block;
+}
+
+/* elementos del submenú */
+nav ul li ul li{
+    margin: 5px 0;
+}
